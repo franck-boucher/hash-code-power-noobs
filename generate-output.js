@@ -1,6 +1,6 @@
 const FileManager = require('./file-manager');
 
-module.exports = vehicles => {
+module.exports = (vehicles,path) => {
   let result = '';
   vehicles.forEach(v => {
     let rides = '';
@@ -8,8 +8,8 @@ module.exports = vehicles => {
       rides += `${r} `;
     });
 
-    result += `${rides.length} ${rides}\n`;
+    result += `${v.rides.length} ${rides}`.trim()+'\n';
   });
 
-  FileManager.write('./out', result);
+  FileManager.write(`./${path}.out`, result).then( () => console.log("success")).catch(er => console.log(er));
 };

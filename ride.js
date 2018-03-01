@@ -1,12 +1,13 @@
 class Ride {
-  constructor() {
-    this._from = [];
-    this._to = [];
-    this._start = 0;
-    this._finish = 0;
+  constructor(datas) {
+    this._from = [datas[0],datas[1]];
+    this._to = [datas[2],datas[3]];
+    this._start = datas[4];
+    this._finish = datas[5];
 
     this.distance = this.distance.bind(this);
   }
+  
 
   distance() {
     return (
