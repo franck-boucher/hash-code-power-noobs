@@ -15,6 +15,6 @@ function printLines(data){
 	  }
 }
 
-function calcDist(a,b,x,y){
+function calcDist(a,b,x,y) {
 	return (a - x) + (b - y)
 }
