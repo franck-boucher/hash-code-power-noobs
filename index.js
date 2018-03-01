@@ -1,16 +1,16 @@
 const fs = require('fs');
 
-//Write file
+// Write file
 fs.writeFile('file.txt', 'coucou', err => {
   if (err) {
     throw err;
   }
 });
 
-fs.readFile('./exemple-pizza/small.in', (err, data) => {
+fs.readFile('./exemple-pizza/big.in', (err, data) => {
   if (err) {
     throw err;
   }
 
-  console.log(data);
+  console.log(data.toString('utf8'));
 });
