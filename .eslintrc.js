@@ -8,6 +8,7 @@ module.exports = {
     sourceType: "module"
   },
   rules: {
-    "linebreak-style": ["error", "unix"]
+    "linebreak-style": ["error", "unix"],
+    "no-console": "off"
   }
 };
