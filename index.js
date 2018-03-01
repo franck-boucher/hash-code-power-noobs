@@ -12,5 +12,13 @@ fs.readFile("./exemple-pizza/big.in", (err, data) => {
     throw err;
   }
 
-  console.log(data.toString("utf8"));
+  printLines(data)
 });
+
+function printLines(data){
+	const strFile = data.toString("utf8")
+	  const lines = strFile.split("\n")
+	  for(var i in lines){
+		  console.log(lines[i])
+	  }
+}
