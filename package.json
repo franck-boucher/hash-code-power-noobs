@@ -1,0 +1,22 @@
+{
+  "name": "hash-code-power-noobs",
+  "version": "1.0.0",
+  "description": "Projet de base de l'équipe Power Noobs pour le Google Hash Code 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franck-boucher/hash-code-power-noobs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franck-boucher/hash-code-power-noobs/issues"
+  },
+  "homepage": "https://github.com/franck-boucher/hash-code-power-noobs#readme",
+  "dependencies": {
+    "eslint": "^4.18.1"
+  }
+}
