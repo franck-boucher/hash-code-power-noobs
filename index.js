@@ -22,3 +22,7 @@ function printLines(data){
 		  console.log(lines[i])
 	  }
 }
+
+function calcDist(a,b,x,y){
+	return (a - x) + (b - y)
+}
