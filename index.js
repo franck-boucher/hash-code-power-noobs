@@ -1,16 +1,16 @@
-const fs = require('fs');
+const fs = require("fs");
 
 // Write file
-fs.writeFile('file.txt', 'coucou', err => {
+fs.writeFile("./exemple-pizza/file.txt", "coucou", err => {
   if (err) {
     throw err;
   }
 });
 
-fs.readFile('./exemple-pizza/big.in', (err, data) => {
+fs.readFile("./exemple-pizza/big.in", (err, data) => {
   if (err) {
     throw err;
   }
 
-  console.log(data.toString('utf8'));
+  console.log(data.toString("utf8"));
 });
